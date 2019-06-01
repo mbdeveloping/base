@@ -1,0 +1,1 @@
+{"version":3,"sources":["webpack:///./src/sass/style.scss"],"names":[],"mappings":"AACA;EACI,mBAFmB;EAInB,kBAAkB;;AAGtB;EACI,YAAY","file":"css/styles.css","sourcesContent":["$bg: rgb(231, 169, 213);\r\nbody {\r\n    background: $bg;\r\n\r\n    text-align: center;\r\n}\r\n\r\ndiv {\r\n    color: white;\r\n}"],"sourceRoot":""}
