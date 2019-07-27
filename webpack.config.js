@@ -6,13 +6,13 @@ module.exports = {
     devtool: 'source-map',
     entry: './src/es/index.js',
     output: {
-        filename: 'js/main.js',
-        path: path.resolve(__dirname, 'public/scripts')
+        filename: 'scripts/js/main.js',
+        path: path.resolve(__dirname, 'public')
     
     },
     plugins: [
         new MiniCssExtractPlugin({
-            filename: "css/styles.css"
+            filename: "scripts/css/styles.css"
         })
     ],
     module: {
@@ -46,6 +46,18 @@ module.exports = {
                     presets: ['@babel/preset-env']
                   }
                 }
+              },
+              {
+                test: /\.(png|svg|jpg|gif)$/,
+                use: [
+                    {
+                        loader: 'file-loader',
+                        options: {
+                            name: '[name].[ext]',
+                            outputPath: 'assets'
+                        }
+                    }
+                ]
               }
         ]
     }
