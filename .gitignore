@@ -1,4 +1,6 @@
+## Global ##
+.DS_Store
 /node_modules/
-.idea
 
+# Generated Assets #
 /public/scripts/*/*.map
